@@ -13,7 +13,7 @@
             margin: 0;
             padding: 0;
             color: #333;
-            font-size: 14px; /* Reduced base font size */
+            font-size: 14px;
         }
         header {
             background-color: #f4f4f4;
@@ -21,18 +21,18 @@
             padding: 1rem;
         }
         main {
-            padding: 2rem;
+            padding: 1rem;
         }
         h1 {
             color: #2c3e50;
-            font-size: 24px; /* Reduced h1 font size */
+            font-size: 24px;
         }
         h2 {
             color: #2c3e50;
-            font-size: 20px; /* Reduced h2 font size */
+            font-size: 20px;
         }
         h3 {
-            font-size: 16px; /* Reduced h3 font size */
+            font-size: 16px;
         }
         .paper {
             margin-bottom: 2rem;
@@ -44,13 +44,42 @@
         }
         .paper p {
             margin-bottom: 0.5rem;
-            font-size: 13px; /* Reduced paragraph font size in papers */
+            font-size: 13px;
         }
         .news-item {
-            font-size: 13px; /* Reduced font size for news items */
+            font-size: 13px;
         }
         .contact-info {
-            font-size: 13px; /* Reduced font size for contact info */
+            font-size: 13px;
+        }
+        @media (max-width: 768px) {
+            body {
+                width: 95%;
+                margin: 0 auto;
+            }
+            header {
+                padding: 0.5rem;
+            }
+            .header-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .header-image {
+                margin-bottom: 1rem;
+            }
+            .header-text {
+                text-align: center;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+            h3 {
+                font-size: 14px;
+            }
         }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
