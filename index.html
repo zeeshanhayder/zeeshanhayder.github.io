@@ -1,12 +1,376 @@
-<html>
-
+</html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Zeeshan Hayder</title>
-	<meta http-equiv='refresh' content='0; URL=DSGG/index.html'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Zeeshan Hayder - Computer Researcher</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            font-size: 14px; /* Reduced base font size */
+        }
+        header {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 1rem;
+        }
+        main {
+            padding: 2rem;
+        }
+        h1 {
+            color: #2c3e50;
+            font-size: 24px; /* Reduced h1 font size */
+        }
+        h2 {
+            color: #2c3e50;
+            font-size: 20px; /* Reduced h2 font size */
+        }
+        h3 {
+            font-size: 16px; /* Reduced h3 font size */
+        }
+        .paper {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1rem;
+        }
+        .paper h3 {
+            color: #3498db;
+        }
+        .paper p {
+            margin-bottom: 0.5rem;
+            font-size: 13px; /* Reduced paragraph font size in papers */
+        }
+        .news-item {
+            font-size: 13px; /* Reduced font size for news items */
+        }
+        .contact-info {
+            font-size: 13px; /* Reduced font size for contact info */
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function toggleBibtex(id) {
+            var x = document.getElementById("bibtex-" + id);
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 </head>
+<body style="width: 70%; margin: 0 auto;">
+    <header>
+        <table class="header-content">
+            <tr>
+                <td class="header-image">
+                    <img src="images/ZH.jpeg" alt="Dr. Zeeshan Hayder" width="180" height="180" style="filter: grayscale(70%);">
+                </td>
+                <td style="width: 20px;"></td> <!-- This adds a gap between the image and text -->
+                <td class="header-text">
+                    <h1>Dr. Zeeshan Hayder</h1>
+                    <h3>Research Scientist</h3>
 
-<body>
-    <h1>Redirecting to DSGG ...</h1>  
+                    <p class="bio">I am a Research Scientist in the <a href="https://research.csiro.au/icv/">Imaging and Computer Vision Group (ICVG)</a> at <a href="https://people.csiro.au/h/z/zeeshan-hayder">Data61/CSIRO</a> and an Honorary Lecturer in the <a href="https://cecc.anu.edu.au/people/">College of Engineering, Computing and Cybernetics (CECC)</a> at <a href="https://www.anu.edu.au/">ANU</a>, specializing in Computer Vision and Machine Learning. My research interests include vision-language models, scene graph generation, algorithms for scene understanding (such as object detection, semantic segmentation, pose estimation, tracking and action localization) and representation learning via self-supervised, weakly-supervised and incremental learning.</p>
+
+                    <p class="contact-info">
+                        <strong>Email:</strong> {firstname}.{lastname}@csiro.au<br>
+                        <strong>Phone:</strong> +61 2 6218 3719<br>
+                        <strong>Office:</strong> CSIRO Data61, Building 801, Clunies Ross St, Acton ACT 2601, Australia
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </header>
+    
+    <main>
+        <section id="news">
+            <h2>News</h2>
+            <ul class="news-list">
+                <li class="news-item">
+                    <span class="news-date">07/2024</span>
+                    <span class="news-content">We have one paper accepted to the European Conference on Computer Vision (<a href="https://eccv.ecva.net/" target="_blank">ECCV 2024</a>).</span>
+                </li>
+                <li class="news-item">
+                    <span class="news-date">02/2024</span>
+                    <span class="news-content">We have two papers accepted to the IEEE / CVF Computer Vision and Pattern Recognition Conference (<a href="https://cvpr.thecvf.com/" target="_blank">CVPR 2024</a>).</span>
+                </li>
+                <li class="news-item">
+                    <span class="news-date">01/2024</span>
+                    <span class="news-content">One paper accepted to the Artificial Intelligence Review (<a href="https://link.springer.com/journal/10462" target="_blank">Springer</a>).</span>
+                </li>
+                <li class="news-item">
+                    <span class="news-date">10/2023</span>
+                    <span class="news-content">One paper accepted to the Machine Learning and the Physical Sciences Workshop at the NeurIPS (<a href="https://ml4physicalsciences.github.io/2023/" target="_blank">NeurIPS ML4PS 2023</a>).</span>
+                </li>
+                <li class="news-item">
+                    <span class="news-date">07/2023</span>
+                    <span class="news-content">One main paper and a workshop paperaccepted to the International Conference on Computer Vision (<a href="https://iccv2023.thecvf.com/" target="_blank">ICCV 2023</a>).</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="papers">
+            <h2>Selected Publications (<a href="https://scholar.google.com.au/citations?hl=en&user=K2INPyYAAAAJ&view_op=list_works&sortby=pubdate">All Publications</a>)</h2>
+            
+            <div class="paper">
+                <table style="width: 100%;">
+                    <tr>
+                        <td style="width: 160px; vertical-align: top;">
+                            <div class="paper-image">
+                                <img src="C3PR/C3PR_preview.png" alt="Canonical Shape Projection" width="150">
+                            </div>
+                        </td>
+                        <td style="vertical-align: top;">
+                            <div class="paper-details">
+                                <h3 style="color: rgba(55, 55, 55, 0.72);">Canonical Shape Projection is All You Need for 3D Few-shot Class Incremental Learning</h3>
+                                <p><strong>Authors:</strong> Ali Cheraghian, Zeeshan Hayder, Sameeea Ramasinghe, Shafin Rahman, Javad Jafaryahya, Lars Petersson, Mehrtash Harandi</p>
+                                <p><strong>Venue:</strong> European Conference on Computer Vision (ECCV) 2024</p>
+                                <div class="paper-links" style="text-align: center; font-size: 0.9em;">
+                                    <a href="C3PR/C3PR.pdf" style="margin-right: 10px;"><i class="fa fa-file-pdf-o"></i> Paper</a>
+                                    <a href="C3PR/C3PR_poster.pdf" style="margin-right: 10px;"><i class="fa fa-file-image-o"></i> Poster</a>
+                                    <a href="https://arxiv.org/abs/2403.09638" style="margin-right: 10px;"><i class="fa fa-archive"></i> arXiv</a>
+                                    <a href="https://github.com/alichr/C3PR" style="margin-right: 10px;"><i class="fa fa-github"></i> Source Code</a>
+                                    <a href="#" onclick="toggleBibtex('C3PR')" style="margin-right: 10px;"><i class="fa fa-quote-right"></i> BibTeX</a>
+                                    <div id="bibtex-C3PR" style="display: none;">
+                                        <pre style="text-align: left; max-width: 100%; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;">
+@inproceedings{cheraghian2024canonical,
+  title={Canonical Shape Projection is All You Need for 3D Few-shot Class Incremental Learning},
+  author={Cheraghian, Ali and Hayder, Zeeshan and Ramasinghe, Sameeea and Rahman, Shafin and Jafaryahya, Javad and Petersson, Lars and Harandi, Mehrtash},
+  booktitle={European Conference on Computer Vision},
+  year={2024}
+}
+                                        </pre>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="paper">
+                <table style="width: 100%;">
+                    <tr>
+                        <td style="width: 160px; vertical-align: top;">
+                            <div class="paper-image">
+                                <img src="DSGG/DSGG_preview.png" alt="Dense Scene Graph Generation" width="150">
+                            </div>
+                        </td>
+                        <td style="vertical-align: top;">
+                            <div class="paper-details">
+                                <h3 style="color: rgba(55, 55, 55, 0.72);">DSGG: Dense Relation Transformer for an End-to-end Scene Graph Generation</h3>
+                                <p><strong>Authors:</strong> Zeeshan Hayder, Xuming He</p>
+                                <p><strong>Venue:</strong> IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2024</p>
+                                <div class="paper-links" style="text-align: center; font-size: 0.9em;">
+                                    <a href="DSGG/DSGG.pdf" style="margin-right: 10px;"><i class="fa fa-file-pdf-o"></i> Paper</a>
+                                    <a href="DSGG/DSGG_supp.pdf" style="margin-right: 10px;"><i class="fa fa-file-pdf-o"></i> Supplementary</a>
+                                    <a href="DSGG/DSGG_poster.pdf" style="margin-right: 10px;"><i class="fa fa-file-image-o"></i> Poster</a>
+                                    <a href="https://arxiv.org/abs/2403.14886" style="margin-right: 10px;"><i class="fa fa-archive"></i> arXiv</a>
+                                    <a href="https://github.com/zeeshanhayder/DSGG" style="margin-right: 10px;"><i class="fa fa-github"></i> Source Code</a>
+                                    <a href="#" onclick="toggleBibtex('DSGG')" style="margin-right: 10px;"><i class="fa fa-quote-right"></i> BibTeX</a>
+                                    <div id="bibtex-DSGG" style="display: none;">
+                                        <pre style="text-align: left; max-width: 100%; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;">
+@inproceedings{hayder2024dsgg,
+  title={DSGG: Dense Relation Transformer for an End-to-end Scene Graph Generation},
+  author={Hayder, Zeeshan and He, Xuming},
+  booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2024}
+}
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="paper">
+                <table style="width: 100%;">
+                    <tr>
+                        <td style="width: 160px; vertical-align: top;">
+                            <div class="paper-image">
+                                <img src="BFTT3D/BFTT3D_preview.png" alt="Backpropagation-free Network" width="150">
+                            </div>
+                        </td>
+                        <td style="vertical-align: top;">
+                            <div class="paper-details">
+                                <h3 style="color: rgba(55, 55, 55, 0.72);">Backpropagation-free Network for 3D Test-time Adaptation</h3>
+                                <p><strong>Authors:</strong> Yanshuo Wang, Ali Cheraghian, Zeeshan Hayder, Jie Hong, Sameera Ramasinghe, Shafin Rahman, David Ahmedt-Aristizabal, Xuesong Li, Lars Petersson, Mehrtash Harandi</p>
+                                <p><strong>Venue:</strong> IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2024</p>
+                                <div class="paper-links" style="text-align: center; font-size: 0.9em;">
+                                    <a href="BFTT3D/BFTT3D.pdf" style="margin-right: 10px;"><i class="fa fa-file-pdf-o"></i> Paper</a>
+                                    <a href="BFTT3D/BFTT3D_supp.pdf" style="margin-right: 10px;"><i class="fa fa-file-pdf-o"></i> Supplementary</a>
+                                    <a href="BFTT3D/BFTT3D_poster.png" style="margin-right: 10px;"><i class="fa fa-file-image-o"></i> Poster</a>
+                                    <a href="http://arxiv.org/abs/2403.18442" style="margin-right: 10px;"><i class="fa fa-archive"></i> arXiv</a>
+                                    <a href="https://github.com/abie-e/BFTT3D" style="margin-right: 10px;"><i class="fa fa-github"></i> Source Code</a>
+                                    <a href="#" onclick="toggleBibtex('BFTT3D')" style="margin-right: 10px;"><i class="fa fa-quote-right"></i> BibTeX</a>
+                                    <div id="bibtex-BFTT3D" style="display: none;">
+                                        <pre style="text-align: left; max-width: 100%; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;">
+@inproceedings{wang2024backpropagation,
+  title={Backpropagation-free Network for 3D Test-time Adaptation},
+  author={Wang, Yanshuo and Cheraghian, Ali and Hayder, Zeeshan and Hong, Jie and Ramasinghe, Sameera and Rahman, Shafin and Ahmedt-Aristizabal, David and Li, Xuesong and Petersson, Lars and Harandi, Mehrtash},
+  booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2024}
+}
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="paper">
+                <table style="width: 100%;">
+                    <tr>
+                        <td style="width: 160px; vertical-align: top;">
+                            <div class="paper-image">
+                                <img src="TopoReview/TopoReview_preview.png" alt="Topological deep learning" width="150">
+                            </div>
+                        </td>
+                        <td style="vertical-align: top;">
+                            <div class="paper-details">
+                                <h3 style="color: rgba(55, 55, 55, 0.72);">Topological deep learning: a review of an emerging paradigm</h3>
+                                <p><strong>Authors:</strong> Ali Zia, Abdelwahed Khamis, James Nichols, Usman Bashir Tayab, Zeeshan Hayder, Vivien Rolland, Eric Stone, Lars Petersson</p>
+                                <p><strong>Venue:</strong> Artificial Intelligence Review, Springer 2024</p>
+                                <div class="paper-links" style="text-align: center; font-size: 0.9em;">
+                                    <a href="TopoReview/TopoReview.pdf" style="margin-right: 10px;"><i class="fa fa-file-pdf-o"></i> Paper</a>
+                                    <a href="https://arxiv.org/abs/2302.03836" style="margin-right: 10px;"><i class="fa fa-archive"></i> arXiv</a>
+                                    <a href="https://github.com/abie-e/BFTT3D" style="margin-right: 10px;"><i class="fa fa-github"></i> Source Code</a>
+                                    <a href="#" onclick="toggleBibtex('TopoReview')" style="margin-right: 10px;"><i class="fa fa-quote-right"></i> BibTeX</a>
+                                    <div id="bibtex-TopoReview" style="display: none;">
+                                        <pre style="text-align: left; max-width: 100%; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;">
+@article{zia2024topological,
+  title={Topological deep learning: a review of an emerging paradigm},
+  author={Zia, Ali and Khamis, Abdelwahed and Nichols, James and Tayab, Usman Bashir and Hayder, Zeeshan and Rolland, Vivien and Stone, Eric and Petersson, Lars},
+  journal={Artificial Intelligence Review},
+  year={2024},
+  publisher={Springer}
+}
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="paper">
+                <table style="width: 100%;">
+                    <tr>
+                        <td style="width: 160px; vertical-align: top;">
+                            <div class="paper-image">
+                                <img src="HyperAVZSL/HyperAVZSL_preview.png" alt="Hyperbolic Audio-visual Zero-shot Learning" width="150">
+                            </div>
+                        </td>
+                        <td style="vertical-align: top;">
+                            <div class="paper-details">
+                                <h3 style="color: rgba(55, 55, 55, 0.72);">Hyperbolic Audio-visual Zero-shot Learning</h3>
+                                <p><strong>Authors:</strong> Jie Hong, Zeeshan Hayder, Junlin Han, Pengfei Fang, Mehrtash Harandi, Lars Petersson</p>
+                                <p><strong>Venue:</strong> IEEE/CVF International Conference on Computer Vision (ICCV) 2023</p>
+                                <div class="paper-links" style="text-align: center; font-size: 0.9em;">
+                                    <a href="HyperAVZSL/HyperAVZSL.pdf" style="margin-right: 10px;"><i class="fa fa-file-pdf-o"></i> Paper</a>
+                                    <a href="https://arxiv.org/abs/2308.12558" style="margin-right: 10px;"><i class="fa fa-archive"></i> arXiv</a>
+                                    <a href="https://github.com/JHome1/Hyper-AVZSL" style="margin-right: 10px;"><i class="fa fa-github"></i> Source Code</a>
+                                    <a href="#" onclick="toggleBibtex('HyperAVZSL')" style="margin-right: 10px;"><i class="fa fa-quote-right"></i> BibTeX</a>
+                                    <div id="bibtex-HyperAVZSL" style="display: none;">
+                                        <pre style="text-align: left; max-width: 100%; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;">
+@inproceedings{zhou2023hyperavzsl,
+  title={Hyperbolic Audio-visual Zero-shot Learning},
+  author={Zhou, Jieming and Zhang, Tong and Hayder, Zeeshan and Petersson, Lars and Harandi, Mehrtash},
+  booktitle={IEEE/CVF International Conference on Computer Vision Workshop (ICCVW)},
+  year={2023}
+}
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="paper">
+                <table style="width: 100%;">
+                    <tr>
+                        <td style="width: 160px; vertical-align: top;">
+                            <div class="paper-image">
+                                <img src="Diff3DHPE/Diff3DHPE_preview.png" alt="Diffusion Model for 3D Human Pose" width="150">
+                            </div>
+                        </td>
+                        <td style="vertical-align: top;">
+                            <div class="paper-details">
+                                <h3 style="color: rgba(55, 55, 55, 0.72);">Diff3DHPE: A Diffusion Model for 3D Human Pose Estimation</h3>
+                                <p><strong>Authors:</strong> Jieming Zhou, Tong Zhang, Zeeshan Hayder, Lars Petersson, Mehrtash Harandi</p>
+                                <p><strong>Venue:</strong> IEEE/CVF International Conference on Computer Vision R6D Workshop (ICCVW) 2023</p>
+                                <div class="paper-links" style="text-align: center; font-size: 0.9em;">
+                                    <a href="Diff3DHPE/Diff3DHPE.pdf" style="margin-right: 10px;"><i class="fa fa-file-pdf-o"></i> Paper</a>
+                                    <a href="https://github.com/socoolzjm/Diff3DHPE" style="margin-right: 10px;"><i class="fa fa-github"></i> Source Code</a>
+                                    <a href="#" onclick="toggleBibtex('Diff3DHPE')" style="margin-right: 10px;"><i class="fa fa-quote-right"></i> BibTeX</a>
+                                    <div id="bibtex-Diff3DHPE" style="display: none;">
+                                        <pre style="text-align: left; max-width: 100%; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;">
+@inproceedings{zhou2023diff3dhpe,
+  title={Diff3DHPE: A Diffusion Model for 3D Human Pose Estimation},
+  author={Zhou, Jieming and Zhang, Tong and Hayder, Zeeshan and Petersson, Lars and Harandi, Mehrtash},
+  booktitle={IEEE/CVF International Conference on Computer Vision Workshop (ICCVW)},
+  year={2023}
+}
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="paper">
+                <table style="width: 100%;">
+                    <tr>
+                        <td style="width: 160px; vertical-align: top;">
+                            <div class="paper-image">
+                                <img src="GalDINO/GalDINO_preview.png" alt="Multimodal Dataset and Benchmark for Radio Galaxy" width="150">
+                            </div>
+                        </td>
+                        <td style="vertical-align: top;">
+                            <div class="paper-details">
+                                <h3 style="color: rgba(55, 55, 55, 0.72);">A Multimodal Dataset and Benchmark for Radio Galaxy and Infrared Host Detection</h3>
+                                <p><strong>Authors:</strong> Nikhel Gupta, Zeeshan Hayder, Ray P Norris, Minh Hyunh, Lars Petersson</p>
+                                <p><strong>Venue:</strong> NeurIPS, Machine Learning and the Physical Sciences Workshop 2023</p>
+                                <div class="paper-links" style="text-align: center; font-size: 0.9em;">
+                                    <a href="GalDINO/GalDINO.pdf" style="margin-right: 10px;"><i class="fa fa-file-pdf-o"></i> Paper</a>
+                                    <a href="https://arxiv.org/pdf/2312.06728" style="margin-right: 10px;"><i class="fa fa-archive"></i> arXiv</a>
+                                    <a href="https://data.csiro.au/collection/csiro:61068" style="margin-right: 10px;"><i class="fa fa-github"></i> Dataset</a>
+                                    <a href="#" onclick="toggleBibtex('GalDINO')" style="margin-right: 10px;"><i class="fa fa-quote-right"></i> BibTeX</a>
+                                    <div id="bibtex-GalDINO" style="display: none;">
+                                        <pre style="text-align: left; max-width: 100%; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;">
+@inproceedings{gupta2023multimodal,
+  title={A Multimodal Dataset and Benchmark for Radio Galaxy and Infrared Host Detection},
+  author={Gupta, Nikhel and Hayder, Zeeshan and Norris, Ray P and Hyunh, Minh and Petersson, Lars},
+  booktitle={NeurIPS, Machine Learning and the Physical Sciences Workshop},
+  year={2023}
+}
+
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+        </section>
+    </main>
 </body>
-
 </html>
